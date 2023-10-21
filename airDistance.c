@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#define EARTH_RADIUS 6371.0
+
 #define M_PI 3.14159265358979323846
 
 double degreesToRadians(double degrees) {
@@ -9,6 +9,7 @@ double degreesToRadians(double degrees) {
 
 int main() {
     double latitude1, longitude1, latitude2, longitude2;
+    const float EARTH_RADIUS = 6371.0;
 
     printf("Enter the latitude and longitude of the origin (in degrees):\n");
     printf("Latitude:  ");
@@ -28,7 +29,7 @@ int main() {
     longitude2 = degreesToRadians(longitude2);
 
     double diff = longitude2 - longitude1;
-    double distance = acos(sin(latitude1)*sin(latitude2)+cos(latitude1)*cos(latitude2)*cos(diff)*EARTH_RADIUS;
+    double distance = acos(sin(latitude1)*sin(latitude2)+cos(latitude1)*cos(latitude2)*cos(diff))*EARTH_RADIUS;
     
     printf("\nLocation Distance \n===============\n");
     printf("Origin:   (%.6lf, %.6lf)\n",latitude1, longitude1);
