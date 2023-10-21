@@ -29,18 +29,12 @@ int main() {
 
     double diff = longitude2 - longitude1;
     double distance = acos(sin(latitude1)*sin(latitude2)+cos(latitude1)*cos(latitude2)*cos(diff)*EARTH_RADIUS;
+    
+    printf("\nLocation Distance \n===============\n");
+    printf("Origin:   (%.6lf, %.6lf)\n",latitude1, longitude1);
+    printf("Destination:   (%.6lf, %.6lf)\n",latitude2, longitude2);
+    printf("Air distance is %.6lf kms\n", distance);
 
-
-
-
-
-
-
-
-
-
-
-
-
+    return 0;
 
 }
