@@ -27,7 +27,9 @@ int main() {
     latitude2 = degreesToRadians(latitude2);
     longitude2 = degreesToRadians(longitude2);
 
-    
+    double diff = longitude2 - longitude1;
+    double distance = acos(sin(latitude1)*sin(latitude2)+cos(latitude1)*cos(latitude2)*cos(diff)*EARTH_RADIUS;
+
 
 
 
