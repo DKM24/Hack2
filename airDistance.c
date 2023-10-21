@@ -15,6 +15,8 @@ int main() {
     scanf("%lf", &latitude1);
     printf("Longitude  :");
     scanf("%lf", &longitude1);
+
     
+
 
 }
